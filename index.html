@@ -1,0 +1,231 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="./css/bootstrap.min.css">
+    <link rel="stylesheet" href="./css/card.css">
+    <script src="./js/bootstrap.min.js"></script>
+    <style type="text/css">
+        body {
+            background: url(./img/bgg.jpg);
+        }
+
+        #hanoi-vedio {
+            margin-top: 30px;
+            width: 75%;
+            height: 500px;
+        }
+    </style>
+    <script type="text/javascript" src="./js/anime.min.js"></script>
+    <script defer="" type="text/javascript" src="./js/fireworks.js"></script>
+
+</head>
+
+<body data-bs-spy="scroll" data-bs-target=".navbar" data-bs-offset="50">
+
+    <div class="container" id="whole-container" style="width: 85%;">
+        <canvas id="fireworks"
+            style="position:fixed;top:0;left:0;width:100vw;height:100vh;pointer-events:none;z-index:2147483647"
+            width="1208" height="908"></canvas>
+        <div id="empty-header" style="color: transparent;height: 55px;"></div>
+        <nav class="navbar navbar-expand-sm transparent navbar-dark fixed-top"
+            style="background-color:rgba(79, 0, 143, 0.335);">
+            <div class="container-fluid">
+                <ul class="navbar-nav">
+                    <li class="nav-item transparent">
+                        <a class="nav-link"
+                            href="#">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#empty-header">轮播图</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#self">个人介绍</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#video">我的视频</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#blog">我的博客</a>
+                    </li>
+                </ul>
+            </div>
+        </nav>
+
+
+
+
+        <div id="swiper" class="carousel slide" data-bs-ride="carousel">
+            <div class="carousel-indicators">
+                <button type="button" data-bs-target="#swiper" data-bs-slide-to="0" class="active"></button>
+                <button type="button" data-bs-target="#swiper" data-bs-slide-to="1"></button>
+                <button type="button" data-bs-target="#swiper" data-bs-slide-to="2"></button>
+                <button type="button" data-bs-target="#swiper" data-bs-slide-to="3"></button>
+            </div>
+            <div class="carousel-inner">
+                <div class="carousel-item active">
+                    <img src="./img/18.png" class="d-block" style="width:100% ">
+                    <div class="carousel-caption">
+                        <h2>Minecraft中的风光</h2>
+                    </div>
+                </div>
+                <div class="carousel-item">
+                    <img src="./img/cf8.jpg" class="d-block" style="width:100%">
+                    <div class="carousel-caption">
+                        <h2>Minecraft中的沙漠</h2>
+                    </div>
+                </div>
+                <div class="carousel-item">
+                    <img src="./img/manji.jpg" class="d-block" style="width:100%">
+                    <div class="carousel-caption">
+                        <h2>动漫魁拔</h2>
+                    </div>
+                </div>
+                <div class="carousel-item">
+                    <img src="./img/wcc.jpg" class="d-block" style="width:100%">
+                    <div class="carousel-caption">
+                        <h2>我是一名程序员</h2>
+                    </div>
+                </div>
+            </div>
+            <button class="carousel-control-prev" type="button" data-bs-target="#swiper" data-bs-slide="prev">
+                <span class="carousel-control-prev-icon"></span>
+            </button>
+            <button class="carousel-control-next" type="button" data-bs-target="#swiper" data-bs-slide="next">
+                <span class="carousel-control-next-icon"></span>
+            </button>
+        </div>
+
+
+
+        <div style="height: 120px;"></div>
+
+
+
+        <div id="self" class="container" style="width: 50%;">
+            <center style="font-size: 50px;">个人介绍</center>
+            <div class="card">
+                <div class="photo">
+                    <img src="./img/avatar.png" alt="许子璇">
+                </div>
+                <h1>
+                    许子璇
+                </h1>
+                <p></p>
+                <h6>
+                    软件工程
+                </h6>
+                <div class="tag-list">
+                    <a href="https://space.bilibili.com/475113082/" class="item"><svg xmlns="http://www.w3.org/2000/svg"
+                            xmlns:xlink="http://www.w3.org/1999/xlink" aria-hidden="true" role="img"
+                            class="iconify iconify--ri icon" width="2em" height="2em"
+                            preserveAspectRatio="xMidYMid meet" viewBox="0 0 24 24" data-icon="ri:bilibili-line">
+                            <path fill="hotpink"
+                                d="M7.172 2.757L10.414 6h3.171l3.243-3.242a1 1 0 0 1 1.415 1.415L16.414 6H18.5A3.5 3.5 0 0 1 22 9.5v8a3.5 3.5 0 0 1-3.5 3.5h-13A3.5 3.5 0 0 1 2 17.5v-8A3.5 3.5 0 0 1 5.5 6h2.085L5.757 4.171a1 1 0 0 1 1.415-1.415zM18.5 8h-13a1.5 1.5 0 0 0-1.493 1.356L4 9.5v8a1.5 1.5 0 0 0 1.356 1.493L5.5 19h13a1.5 1.5 0 0 0 1.493-1.356L20 17.5v-8A1.5 1.5 0 0 0 18.5 8zM8 11a1 1 0 0 1 1 1v2a1 1 0 0 1-2 0v-2a1 1 0 0 1 1-1zm8 0a1 1 0 0 1 1 1v2a1 1 0 0 1-2 0v-2a1 1 0 0 1 1-1z">
+                            </path>
+                        </svg></a>
+                    <a href="https://xuinrz.github.io" class="item"><svg xmlns="http://www.w3.org/2000/svg"
+                            xmlns:xlink="http://www.w3.org/1999/xlink" aria-hidden="true" role="img"
+                            class="iconify iconify--ri icon" width="2em" height="2em"
+                            preserveAspectRatio="xMidYMid meet" viewBox="0 0 24 24" data-icon="ri:qq-line">
+                            <path fill="aqua"
+                                d="m17.535 12.514l-.696-1.796c0-.021.01-.375.01-.558C16.848 7.088 15.446 4 12 4s-4.848 3.088-4.848 6.16c0 .183.009.537.01.558l-.696 1.796c-.19.515-.38 1.05-.517 1.51c-.657 2.189-.444 3.095-.282 3.115c.348.043 1.354-1.648 1.354-1.648c0 .98.488 2.258 1.542 3.18c-.394.127-.878.32-1.188.557c-.28.214-.245.431-.194.52c.22.385 3.79.245 4.82.125c1.03.12 4.599.26 4.82-.126c.05-.088.085-.305-.194-.519c-.311-.237-.795-.43-1.19-.556c1.055-.923 1.542-2.202 1.542-3.181c0 0 1.007 1.691 1.355 1.648c.162-.02.378-.928-.283-3.116c-.14-.463-.325-.994-.516-1.509zm1.021 8.227c-.373.652-.833.892-1.438 1.057a4.91 4.91 0 0 1-.794.138c-.44.045-.986.065-1.613.064a33.23 33.23 0 0 1-2.71-.116c-.692.065-1.785.114-2.71.116a16.07 16.07 0 0 1-1.614-.064a4.928 4.928 0 0 1-.793-.138c-.605-.164-1.065-.405-1.44-1.059a2.274 2.274 0 0 1-.239-1.652c-.592-.132-1.001-.483-1.279-.911a2.43 2.43 0 0 1-.309-.71a4.028 4.028 0 0 1-.116-1.106c.013-.785.187-1.762.532-2.912c.14-.466.327-1.008.568-1.655l.553-1.43a15.496 15.496 0 0 1-.002-.203C5.152 5.605 7.588 2 12 2c4.413 0 6.848 3.605 6.848 8.16l-.001.203l.553 1.43l.01.026c.225.606.413 1.153.556 1.626c.348 1.15.522 2.129.535 2.916c.007.407-.03.776-.118 1.108c-.066.246-.161.48-.31.708c-.276.427-.684.776-1.277.91c.13.554.055 1.14-.24 1.654z">
+                            </path>
+                        </svg></a>
+                    <a href="https://github.com/xuinrz/" class="item"><svg xmlns="http://www.w3.org/2000/svg"
+                            xmlns:xlink="http://www.w3.org/1999/xlink" aria-hidden="true" role="img"
+                            class="iconify iconify--ri icon" width="2em" height="2em"
+                            preserveAspectRatio="xMidYMid meet" viewBox="0 0 24 24" data-icon="ri:github-line">
+                            <path fill="purple"
+                                d="M5.883 18.653c-.3-.2-.558-.455-.86-.816a50.32 50.32 0 0 1-.466-.579c-.463-.575-.755-.84-1.057-.949a1 1 0 0 1 .676-1.883c.752.27 1.261.735 1.947 1.588c-.094-.117.34.427.433.539c.19.227.33.365.44.438c.204.137.587.196 1.15.14c.023-.382.094-.753.202-1.095C5.38 15.31 3.7 13.396 3.7 9.64c0-1.24.37-2.356 1.058-3.292c-.218-.894-.185-1.975.302-3.192a1 1 0 0 1 .63-.582c.081-.024.127-.035.208-.047c.803-.123 1.937.17 3.415 1.096A11.731 11.731 0 0 1 12 3.315c.912 0 1.818.104 2.684.308c1.477-.933 2.613-1.226 3.422-1.096c.085.013.157.03.218.05a1 1 0 0 1 .616.58c.487 1.216.52 2.297.302 3.19c.691.936 1.058 2.045 1.058 3.293c0 3.757-1.674 5.665-4.642 6.392c.125.415.19.879.19 1.38a300.492 300.492 0 0 1-.012 2.716a1 1 0 0 1-.019 1.958c-1.139.228-1.983-.532-1.983-1.525l.002-.446l.005-.705c.005-.708.007-1.338.007-1.998c0-.697-.183-1.152-.425-1.36c-.661-.57-.326-1.655.54-1.752c2.967-.333 4.337-1.482 4.337-4.66c0-.955-.312-1.744-.913-2.404a1 1 0 0 1-.19-1.045c.166-.414.237-.957.096-1.614l-.01.003c-.491.139-1.11.44-1.858.949a1 1 0 0 1-.833.135A9.626 9.626 0 0 0 12 5.315c-.89 0-1.772.119-2.592.35a1 1 0 0 1-.83-.134c-.752-.507-1.374-.807-1.868-.947c-.144.653-.073 1.194.092 1.607a1 1 0 0 1-.189 1.045C6.016 7.89 5.7 8.694 5.7 9.64c0 3.172 1.371 4.328 4.322 4.66c.865.097 1.201 1.177.544 1.748c-.192.168-.429.732-.429 1.364v3.15c0 .986-.835 1.725-1.96 1.528a1 1 0 0 1-.04-1.962v-.99c-.91.061-1.662-.088-2.254-.485z">
+                            </path>
+                        </svg></a>
+                </div>
+                <p></p>
+                <center>诗和远方都很贵，星辰大海也收费</center>
+                <div class="container mt-3">
+                    <h2>我的技能</h2>
+                    <button id="hide-skills" type="button" class="btn btn-primary" data-bs-toggle="collapse"
+                        data-bs-target="#skills">显示</button>
+                    <div id="skills" class="collapse" style="width: 50%;">
+                        <h3>Java</h3>
+                        <div class="progress">
+                            <div class="progress-bar progress-bar-striped progress-bar-animated" style="width:80%">
+                            </div>
+                        </div>
+                        <h3>C++</h3>
+                        <div class="progress">
+                            <div class="progress-bar progress-bar-striped progress-bar-animated" style="width:60%">
+                            </div>
+                        </div>
+                        <h3>Python</h3>
+                        <div class="progress">
+                            <div class="progress-bar progress-bar-striped progress-bar-animated" style="width:16%">
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div style="height: 120px;"></div>
+
+        <div id="style" class="container mt-3" style="width: 100%;margin: 0 auto;">
+            
+
+            <div id="accordion" style="margin: 0 auto;">
+                <div class="card" id="video" style="height: 720px;">
+                    <div class="card-header">
+                        <a class="btn" href="https://www.bilibili.com/video/BV1PD4y1c76Q">
+                            <h3>我的视频</h3>
+                        </a>
+                    </div>
+                    <iframe id="hanoi-vedio"
+                        src="//player.bilibili.com/player.html?aid=722499563&bvid=BV1PD4y1c76Q&cid=464540894&page=1"
+                        scrolling="yes" overflow-x:hidden;overflow-y:auto; framespacing="0" allowfullscreen="true">
+                    </iframe>
+                    <br>
+                    <h3>大一学习Java期间，接触了“汉诺塔”这一小游戏</h3>
+                </div>
+                <div style="height: 120px;"></div>
+                <div class="card" id="blog" style="height: 720px;">
+                    <div class="card-header">
+                        <a class="btn" href="https://xuinrz.github.io">
+                            <h3>我的博客</h3>
+                        </a>
+                    </div>
+                    <iframe id="hanoi-vedio" src="https://xuinrz.github.io/" scrolling="no" framespacing="0"
+                        allowfullscreen="true"> </iframe>
+                    <br>
+                    <h3>大一暑假，我使用Hexo搭建了自己的博客</h3>
+                    <br>
+                </div>
+            </div>
+        </div>
+
+
+
+        <a href="#whole-container" class="fixed-bottom" id="totop">
+            <svg class="icon"
+                style="width: 4em;height: 3.5em;vertical-align: middle;fill: currentColor;overflow: hidden;position: fixed;bottom: 10px;right:10px;color:rgb(254, 229, 0)"
+                viewBox="0 0 1024 1024">
+                <path
+                    d="M838.656 767.616l0 17.344-201.344-40.576c-12.992 43.456-65.152 76.736-125.952 76.736-60.864 0-113.024-33.344-126.016-78.208l-199.872 39.104 0-17.344c0-98.496 27.52-169.472 89.728-228.864C253.44 254.848 379.456 76.736 504 4.288L511.296 0l7.232 4.288c124.608 72.448 249.088 250.56 228.864 531.584C811.136 595.264 838.656 666.24 838.656 767.616zM574.976 417.152c37.632-34.752 40.512-94.144 5.76-131.84C545.984 247.68 486.656 244.736 448.96 279.488c-37.632 34.752-40.512 94.208-5.76 131.84C477.952 449.024 537.344 451.904 574.976 417.152zM558.4 916.8C558.4 958.784 512 1024 512 1024s-46.336-69.568-46.336-107.2c0-31.872 20.224-57.92 46.336-57.92S558.4 884.928 558.4 916.8z"
+                    p-id="3101"></path>
+            </svg>
+        </a>
+
+
+
+
+    </div>
+    <footer>
+        <br>
+        <center><b style="font-size:larger">&copy; 2023 Copyright 许子璇</b></center>
+        <br>
+    </footer>
+</body>
+
+</html>
